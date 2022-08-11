@@ -1,0 +1,44 @@
+<mat-toolbar>
+  Hoja de Vida - EDUARDO RODRIGUEZ
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened>
+    <img
+    class="avatar mat-elevation-z8"
+    src="../../../assets/imagenes/propia.png" alt="Imagen">
+
+    <h4 class="name">Eduardo Rodriguez</h4>
+    <p class="designation">Desarrollador de Software</p>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/inicio">
+      <mat-icon>home</mat-icon>
+      <span>Inicio</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="/perfil">
+      <mat-icon>person</mat-icon>
+      <span>Perfil</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="/info">
+      <mat-icon>info</mat-icon>
+      <span>Información</span>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/ayuda">
+      <mat-icon>help</mat-icon>
+      <span>Ayuda</span>
+    </button>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
